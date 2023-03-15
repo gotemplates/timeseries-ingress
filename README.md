@@ -8,7 +8,7 @@ functionality is contained in the gotemplates/timeseries module.
 
 ## handler
 
-Http [handlers][handlerpkg] for health and access log traffic.
+Http [handlers][handlerpkg] for health and access log ingress traffic.
 
 ## host
 

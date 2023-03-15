@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/go-http-utils/headers v0.0.0-20181008091004-fed159eddc2a
-	github.com/gotemplates/core v0.0.0-20230312181010-74c6ff519a51
+	github.com/gotemplates/core v0.0.0-20230315113329-269556ceddc5
 	github.com/gotemplates/host v0.0.0-20230312182349-16a3c99e4b20
 	github.com/gotemplates/timeseries v0.0.0-20230315110714-d4c37166397d
 )

@@ -1,6 +1,7 @@
 package host
 
 import (
+	"errors"
 	"github.com/gotemplates/core/exchange"
 	"github.com/gotemplates/core/runtime"
 	"github.com/gotemplates/host/accessdata"
@@ -15,6 +16,7 @@ import (
 )
 
 const (
+	startupLoc                = "/host/startup"
 	egressLogOperatorNameFmt  = "fs/egress_logging_operators_{env}.json"
 	ingressLogOperatorNameFmt = "fs/ingress_logging_operators_{env}.json"
 )
@@ -25,14 +27,14 @@ func Startup[E runtime.ErrorHandler, O runtime.OutputHandler](mux *http.ServeMux
 	initOrigin()
 	err := initLogging()
 	if err != nil {
-		return nil, e.Handle("/host/startup/logging", err)
+		return nil, e.Handle(startupLoc+"/logging", err)
 	}
 	errs := initControllers()
 	if len(errs) > 0 {
-		return nil, e.Handle("/host/startup/controllers", errs...)
+		return nil, e.Handle(startupLoc+"/controllers", errs...)
 	}
 	initMux(mux)
-	status := startupResources[E, O]()
+	status := startupResources[E, O](true)
 	if !status.OK() {
 		return mux, status
 	}
@@ -45,8 +47,26 @@ func Shutdown() {
 	messaging.Shutdown()
 }
 
-func startupResources[E runtime.ErrorHandler, O runtime.OutputHandler]() *runtime.Status {
-	return messaging.Startup[E, O](time.Second*5, nil)
+func startupResources[E runtime.ErrorHandler, O runtime.OutputHandler](addCredentials bool) *runtime.Status {
+	var e E
+	content, err := createContent(addCredentials)
+	if err != nil {
+		return e.Handle(startupLoc+"/resources", err)
+	}
+	return messaging.Startup[E, O](time.Second*5, content)
+
+}
+
+func createContent(addCredentials bool) (messaging.ContentMap, error) {
+	content := make(messaging.ContentMap, 2)
+	if config.DatabaseUrl() == "" {
+		return nil, errors.New("database url is empty")
+	}
+	content[config.PostgresPgxsqlUri()] = []any{messaging.DatabaseUrl{Url: config.DatabaseUrl()}, messaging.ControllerApply(controller.EgressApply)}
+	if addCredentials {
+		content[config.PostgresPgxsqlUri()] = append(content[config.PostgresPgxsqlUri()], messaging.Credentials(func() (username string, password string, err error) { return "", "", nil }))
+	}
+	return content, nil
 }
 
 func initOrigin() {

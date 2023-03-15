@@ -6,8 +6,8 @@ github.com/go-http-utils/headers v0.0.0-20181008091004-fed159eddc2a h1:v6zMvHuY9
 github.com/go-http-utils/headers v0.0.0-20181008091004-fed159eddc2a/go.mod h1:I79BieaU4fxrw4LMXby6q5OS9XnoR9UIKLOzDFjUmuw=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
-github.com/gotemplates/core v0.0.0-20230312181010-74c6ff519a51 h1:n9q6r6C1r51EeK3C8fw51ZRUtFpXxjylaHRruWr8lTg=
-github.com/gotemplates/core v0.0.0-20230312181010-74c6ff519a51/go.mod h1:3ZoyfukQrZx/s3AZqCo0+Cul2laxnBT2yNqG8eeC6Ig=
+github.com/gotemplates/core v0.0.0-20230315113329-269556ceddc5 h1:tdGobRjSi5RMJ7lS3kvY/W+PeqLdyckhlhHbb/Ew2t8=
+github.com/gotemplates/core v0.0.0-20230315113329-269556ceddc5/go.mod h1:3ZoyfukQrZx/s3AZqCo0+Cul2laxnBT2yNqG8eeC6Ig=
 github.com/gotemplates/host v0.0.0-20230312182349-16a3c99e4b20 h1:j60gR5kFnRaEgxRgC9hZUlQnN5CUxf9gq4TaKQ86rsE=
 github.com/gotemplates/host v0.0.0-20230312182349-16a3c99e4b20/go.mod h1:v21tDjNpssOrIEE20+jC2TfG57IPmm+aBNnC4ddHqx4=
 github.com/gotemplates/postgresql v0.0.0-20230310182041-67085402f0df h1:Cxv/zCr430afboYRgq+CKc2J37r5zeKic2fTZQO9R1g=

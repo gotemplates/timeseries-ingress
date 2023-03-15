@@ -3,7 +3,7 @@
   {
     "Name": "timeseries",
     "Pattern": "urn:postgres",
-    "Traffic": "ingress",
+    "Traffic": "egress",
     "Timeout": {
       "Duration": "5s",
       "StatusCode": 504

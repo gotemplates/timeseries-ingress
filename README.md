@@ -5,4 +5,4 @@ the Http handlers for ingress traffic, a host package for initialization, and a 
 functionality is contained in the gotemplates/timeseries module.
 
 
-[timeseriespkg]: <https://pkg.go.dev/github.com/gotemplates/timeseries-ingress>
+[timeseriespkg]: <https://pkg.go.dev/github.com/gotemplates/timeseries-ingress/pkg>

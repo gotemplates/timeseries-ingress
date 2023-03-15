@@ -8,17 +8,18 @@ functionality is contained in the gotemplates/timeseries module.
 
 ## handler
 
-Http handlers for health and access log traffic.
+[Http handlers][handlerpkg] for health and access log traffic.
 
 ## host
 
-Service host initialization.
+Service [host][hostpkg] initialization.
 
 
 ## resource
 
-Host embedded configuration resources.
+Host embedded configuration [resources][resourcepkg].
 
 [timeseriespkg]: <https://pkg.go.dev/github.com/gotemplates/timeseries-ingress/pkg>
-
-
+[handlerpkg]: <https://pkg.go.dev/github.com/gotemplates/timeseries-ingress/pkg/handler>
+[hostpkg]: <https://pkg.go.dev/github.com/gotemplates/timeseries-ingress/pkg/host>
+[resourcepkg]: <https://pkg.go.dev/github.com/gotemplates/timeseries-ingress/pkg/resource>

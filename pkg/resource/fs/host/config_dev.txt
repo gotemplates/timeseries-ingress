@@ -1,0 +1,5 @@
+// dev environment
+database-url : postgres://xxxx:xxxx@xxxx.cloud.timescale.com:31770/xxxx?sslmode=require
+ping-path : ping
+postgres-urn : urn:postgres
+postgres-pgxsql-uri : github.com/idiomatic-go/postgresql/pgxsql

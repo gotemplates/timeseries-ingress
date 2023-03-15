@@ -1,0 +1,9 @@
+CREATE OR REPLACE FUNCTION GetAccessLog() RETURNS access_log
+  LANGUAGE PLPGSQL
+  AS
+$$
+BEGIN
+SELECT *
+FROM access_log log
+END;
+$$;

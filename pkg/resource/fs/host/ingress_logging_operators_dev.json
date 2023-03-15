@@ -1,0 +1,50 @@
+[
+  {
+    "Value": "%START_TIME%"
+  },
+  {
+    "Value": "%DURATION%"
+  },
+  {
+    "Value": "%DURATION_STR%"
+  },
+  {
+    "Value": "%TRAFFIC%"
+  },
+  {
+    "Value": "%SERVICE%"
+  },
+  {
+    "Value": "%INSTANCE_ID%"
+  },
+  {
+    "Value": "%ROUTE_NAME%"
+  },
+  {
+    "Value": "%X-REQUEST-ID%"
+  },
+  {
+    "Value": "%STATUS_CODE%"
+  },
+  {
+    "Value": "%METHOD%"
+  },
+  {
+    "Value": "%PATH%"
+  },
+  {
+    "Value": "%TIMEOUT_DURATION%"
+  },
+  {
+    "Value": "%RATE_LIMIT%"
+  },
+  {
+    "Value": "%RATE_BURST%"
+  },
+  {
+    "Value": "%STATUS_FLAGS%"
+  },
+  {
+    "Value": "%BYTES_SENT%"
+  }
+]

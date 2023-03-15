@@ -1,0 +1,17 @@
+[
+
+  {
+    "Name": "timeseries",
+    "Pattern": "urn:postgres",
+    "Traffic": "ingress",
+    "Timeout": {
+      "Duration": "5s",
+      "StatusCode": 504
+    },
+    "RateLimiter": {
+      "Limit": 100,
+      "Burst": 25,
+      "StatusCode": 503
+    }
+  }
+]

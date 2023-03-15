@@ -12,8 +12,8 @@ github.com/gotemplates/host v0.0.0-20230312182349-16a3c99e4b20 h1:j60gR5kFnRaEgx
 github.com/gotemplates/host v0.0.0-20230312182349-16a3c99e4b20/go.mod h1:v21tDjNpssOrIEE20+jC2TfG57IPmm+aBNnC4ddHqx4=
 github.com/gotemplates/postgresql v0.0.0-20230310182041-67085402f0df h1:Cxv/zCr430afboYRgq+CKc2J37r5zeKic2fTZQO9R1g=
 github.com/gotemplates/postgresql v0.0.0-20230310182041-67085402f0df/go.mod h1:KSV9dW488qdVC6OeBWBOuJtWjqtehYrT/RQ1S+Uo54U=
-github.com/gotemplates/timeseries v0.0.0-20230315110714-d4c37166397d h1:zGroBsWa3h3Wq2LWlOlNYEAG9EC54o6jCLYFWCxP/Ng=
-github.com/gotemplates/timeseries v0.0.0-20230315110714-d4c37166397d/go.mod h1:Bt5tKEoFzLXnHGhXDWcyDPnPw2AA3A6uQEEoJywM3Ng=
+github.com/gotemplates/timeseries v0.0.0-20230315115604-2527c7ce881d h1:SNrRpJF3cxv8NGZnyfei+zhdrmYjc4f99Dr6CTTE+xU=
+github.com/gotemplates/timeseries v0.0.0-20230315115604-2527c7ce881d/go.mod h1:Bt5tKEoFzLXnHGhXDWcyDPnPw2AA3A6uQEEoJywM3Ng=
 github.com/jackc/pgpassfile v1.0.0 h1:/6Hmqy13Ss2zCq62VdNG8tM1wchn8zjSGOBJ6icpsIM=
 github.com/jackc/pgpassfile v1.0.0/go.mod h1:CEx0iS5ambNFdcRtxPj5JhEz+xB6uRky5eyVu/W2HEg=
 github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a h1:bbPeKD0xmW/Y25WS6cokEszi5g+S0QxI/d45PkRi7Nk=
